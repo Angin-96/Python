@@ -49,8 +49,8 @@ print(echo)
 
 # 3. Write a Python program which add an element to the given list.
 alfa=[1,2,3,'gh',5]
-alfa=alfa+['h',122,'havana']
-print("alfa=", alfa)
+alfa.append('beta')
+print(alfa)
 
 
 
