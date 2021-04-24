@@ -2,7 +2,7 @@
 l=[1,2,3,4,5,6]
 mult=1
 for i in l:
-    mult*=i
+    mult=mult*i
 print(mult)
 
 
@@ -27,11 +27,20 @@ for i in p:
     if i not in l:
         l.append(i)
 print(l)
+st=list(set(p))
 
 
 #5. Write a Python program to find the most appeared element in a list.
-a=[1,2,3,5,1,1,2,5,1,8,1]
+a=[1,2,3,5,1,1,2,5,1,8,3,3,3,3,3]
+c=0
+d=0
 for i in a:
     s=a.count(i)
-    d=i
+    if s>c:
+        c=s
+        d=i
 print(d)
+
+
+
+
