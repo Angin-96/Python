@@ -54,6 +54,13 @@ def gcd(a,b):
     else:
         print("Your number must be positive")
 
+def gcd_2(a, b):
+    x = 0
+    for i in range(1, b+1):
+        if b % i == 0 and a % i == 0:
+            x = i
+    return x
+
 
 
 
